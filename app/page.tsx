@@ -1,6 +1,8 @@
 import {
   MagnifyingGlassIcon as SearchIcon,
   ShoppingCartIcon,
+  EnvelopeIcon as UserLoginIcon,
+  KeyIcon,
 } from "@heroicons/react/24/outline";
 export default function Home() {
   return (
@@ -310,13 +312,53 @@ export default function Home() {
               <img src="/lbt.png" className=" object-cover" />
             </div>
           </div>
-          <div className="col-span-2 bg-white">登录</div>
+          <div className="col-span-2 bg-white p-3 overflow-hidden flex flex-col space-y-4">
+            <div>欢迎来到AXUM商城</div>
+            <form className="flex flex-col space-y-3">
+              <div>
+                <label className="flex justify-start items-center border px-3 py-1 space-x-1">
+                  <span className="shrink-0">
+                    <UserLoginIcon className="w-5 h-5" />
+                  </span>
+                  <input
+                    placeholder="邮箱地址"
+                    className="w-36 outline-none p-1"
+                  />
+                </label>
+              </div>
+              <div>
+                <label className="flex justify-start items-center border px-3 py-1 space-x-1">
+                  <span className="shrink-0">
+                    <KeyIcon className="w-5 h-5" />
+                  </span>
+                  <input
+                    placeholder="密码"
+                    type="password"
+                    className="w-36 outline-none p-1"
+                  />
+                </label>
+              </div>
+              <div className="flex justify-center items-center space-x-4">
+                <button className="px-3 py-1 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+                  登录
+                </button>
+                <a
+                  className="px-3 py-1 bg-orange-600 text-white rounded-full hover:bg-orange-700"
+                  href=""
+                >
+                  注册
+                </a>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <section className="container mx-auto max-w-7xl my-6">
-        <h2>推荐商品</h2>
+        <h2 className="my-6 text-xl font-bold text-center before:content-['/'] after:content-['/'] before:font-mono before:text-xs before:mr-3 before:text-gray-600 after:font-mono after:text-xs after:ml-3 after:text-gray-600">
+          推荐商品
+        </h2>
 
-        <ul className="grid grid-cols-5 gap-2">
+        <ul className="grid grid-cols-5 gap-4">
           <li className="p-3 bg-white overflow-hidden">
             <a
               href=""
@@ -447,8 +489,84 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <footer>
-        <div className="container mx-auto max-w-7xl">FOOTER</div>
+      <footer className="bg-[#eaeaea]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-5 p-6">
+            <div>
+              <img
+                src="https://file.axum.rs/asset/logo.png"
+                className="w-20 object-cover grayscale"
+              />
+            </div>
+            <ul>
+              <li className="font-semibold">购物指南</li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  购物流程
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  会员简介
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  常见问题
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li className="font-semibold">物流配送</li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  运费说明
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  关税说明
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li className="font-semibold">帮助中心</li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  付款方式
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  价格保证
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  账户安全
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  隐私协议
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li className="font-semibold">联系我们</li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  客服联络
+                </a>
+              </li>
+              <li className="my-1 text-sm">
+                <a href="" className="hover:text-red-600">
+                  商务合作
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </>
   );
