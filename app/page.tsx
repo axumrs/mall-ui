@@ -1,13 +1,11 @@
 import {
-  MagnifyingGlassIcon as SearchIcon,
-  ShoppingCartIcon,
   EnvelopeIcon as UserLoginIcon,
   KeyIcon,
 } from "@heroicons/react/24/outline";
 export default function Home() {
   return (
-    <>
-      <section className="bg-[#f0f3ee]">
+    <div className="bg-[#f5f5f5]">
+      {/* <section className="bg-[#f0f3ee]">
         <div className="container mx-auto max-w-7xl grid grid-cols-12 gap-x-2">
           <div className="col-span-2 bg-white border-b p-3">
             <a href="" className="flex justify-center items-center">
@@ -39,321 +37,321 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
-      <section>
-        <div className="container mx-auto max-w-7xl grid grid-cols-12 gap-x-2">
-          <div className="col-span-2 bg-white">
-            <ul className="">
-              <li className="relative group hover:bg-gray-100 p-3">
-                <a href="" className="hover:text-red-600">
-                  分类1
-                </a>
-                <div className="hidden group-hover:block absolute top-0 w-96 z-10 -right-96 p-3 bg-white border shadow">
-                  <ul>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类1-1
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-1-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-1-2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类1-2
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-2-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-2-2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-2-3
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类1-1
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-1-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-1-2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类1-2
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-2-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-2-2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类1-2-3
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="relative group hover:bg-gray-100 p-3">
-                <a href="" className="hover:text-red-600">
-                  分类2
-                </a>
-                <div className="hidden group-hover:block absolute top-0 w-96 z-10 -right-96 p-3 bg-white border shadow">
-                  <ul>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类2-1
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-1-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-1-2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类2-2
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-2-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-2-2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-2-3
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类2-1
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-1-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-1-2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类2-2
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-2-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-2-2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类2-2-3
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="relative group hover:bg-gray-100 p-3">
-                <a href="" className="hover:text-red-600">
-                  分类3
-                </a>
-                <div className="hidden group-hover:block absolute top-0 w-96 z-10 -right-96 p-3 bg-white border shadow">
-                  <ul>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类3-1
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-1-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-1-2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类3-2
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-2-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-2-2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-2-3
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类3-1
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-1-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-1-2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="flex justify-start items-center space-x-2">
-                      <a href="" className="font-semibold hover:text-red-600">
-                        分类3-2
-                      </a>
-                      <ul className="flex justify-start items-center space-x-2 flex-wrap">
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-2-1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-2-2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="" className="hover:text-red-600">
-                            分类3-2-3
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-8">
-            <div className="col-span-9">
-              <img src="/lbt.png" className=" object-cover" />
-            </div>
-          </div>
-          <div className="col-span-2 bg-white p-3 overflow-hidden flex flex-col space-y-4">
-            <div>欢迎来到AXUM商城</div>
-            <form className="flex flex-col space-y-3">
-              <div>
-                <label className="flex justify-start items-center border px-3 py-1 space-x-1">
-                  <span className="shrink-0">
-                    <UserLoginIcon className="w-5 h-5" />
-                  </span>
-                  <input
-                    placeholder="邮箱地址"
-                    className="w-36 outline-none p-1"
-                  />
-                </label>
+      </section> */}
+      <Hr />
+      <div className="container mx-auto max-w-7xl grid grid-cols-12 gap-x-2">
+        <div className="col-span-2 bg-white">
+          <ul className="">
+            <li className="relative group hover:bg-gray-200 p-3">
+              <a href="" className="hover:text-red-600">
+                分类1
+              </a>
+              <div className="hidden group-hover:block absolute top-0 w-96 z-10 -right-96 p-3 bg-white border shadow">
+                <ul>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类1-1
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-1-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-1-2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类1-2
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-2-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-2-2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-2-3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类1-1
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-1-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-1-2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类1-2
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-2-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-2-2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类1-2-3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-              <div>
-                <label className="flex justify-start items-center border px-3 py-1 space-x-1">
-                  <span className="shrink-0">
-                    <KeyIcon className="w-5 h-5" />
-                  </span>
-                  <input
-                    placeholder="密码"
-                    type="password"
-                    className="w-36 outline-none p-1"
-                  />
-                </label>
+            </li>
+            <li className="relative group hover:bg-gray-200 p-3">
+              <a href="" className="hover:text-red-600">
+                分类2
+              </a>
+              <div className="hidden group-hover:block absolute top-0 w-96 z-10 -right-96 p-3 bg-white border shadow">
+                <ul>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类2-1
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-1-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-1-2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类2-2
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-2-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-2-2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-2-3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类2-1
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-1-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-1-2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类2-2
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-2-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-2-2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类2-2-3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-              <div className="flex justify-center items-center space-x-4">
-                <button className="px-3 py-1 bg-blue-600 text-white rounded-full hover:bg-blue-700">
-                  登录
-                </button>
-                <a
-                  className="px-3 py-1 bg-orange-600 text-white rounded-full hover:bg-orange-700"
-                  href=""
-                >
-                  注册
-                </a>
+            </li>
+            <li className="relative group hover:bg-gray-200 p-3">
+              <a href="" className="hover:text-red-600">
+                分类3
+              </a>
+              <div className="hidden group-hover:block absolute top-0 w-96 z-10 -right-96 p-3 bg-white border shadow">
+                <ul>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类3-1
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-1-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-1-2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类3-2
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-2-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-2-2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-2-3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类3-1
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-1-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-1-2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="flex justify-start items-center space-x-2">
+                    <a href="" className="font-semibold hover:text-red-600">
+                      分类3-2
+                    </a>
+                    <ul className="flex justify-start items-center space-x-2 flex-wrap">
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-2-1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-2-2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" className="hover:text-red-600">
+                          分类3-2-3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-            </form>
+            </li>
+          </ul>
+        </div>
+        <div className="col-span-8">
+          <div className="col-span-9">
+            <img src="/lbt.png" className=" object-cover" />
           </div>
         </div>
-      </section>
-      <section className="container mx-auto max-w-7xl my-6">
+        <div className="col-span-2 bg-white p-3 overflow-hidden flex flex-col space-y-4">
+          <div>欢迎来到AXUM商城</div>
+          <form className="flex flex-col space-y-3">
+            <div>
+              <label className="flex justify-start items-center border px-3 py-1 space-x-1">
+                <span className="shrink-0">
+                  <UserLoginIcon className="w-5 h-5" />
+                </span>
+                <input
+                  placeholder="邮箱地址"
+                  className="w-36 outline-none p-1"
+                />
+              </label>
+            </div>
+            <div>
+              <label className="flex justify-start items-center border px-3 py-1 space-x-1">
+                <span className="shrink-0">
+                  <KeyIcon className="w-5 h-5" />
+                </span>
+                <input
+                  placeholder="密码"
+                  type="password"
+                  className="w-36 outline-none p-1"
+                />
+              </label>
+            </div>
+            <div className="flex justify-center items-center space-x-4">
+              <button className="px-3 py-1 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+                登录
+              </button>
+              <a
+                className="px-3 py-1 bg-orange-600 text-white rounded-full hover:bg-orange-700"
+                href=""
+              >
+                注册
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <section className="container mx-auto max-w-7xl mt-6">
         <h2 className="my-6 text-xl font-bold text-center before:content-['/'] after:content-['/'] before:font-mono before:text-xs before:mr-3 before:text-gray-600 after:font-mono after:text-xs after:ml-3 after:text-gray-600">
           推荐商品
         </h2>
@@ -489,85 +487,12 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <footer className="bg-[#eaeaea]">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-5 p-6">
-            <div>
-              <img
-                src="https://file.axum.rs/asset/logo.png"
-                className="w-20 object-cover grayscale"
-              />
-            </div>
-            <ul>
-              <li className="font-semibold">购物指南</li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  购物流程
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  会员简介
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  常见问题
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li className="font-semibold">物流配送</li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  运费说明
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  关税说明
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li className="font-semibold">帮助中心</li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  付款方式
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  价格保证
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  账户安全
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  隐私协议
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li className="font-semibold">联系我们</li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  客服联络
-                </a>
-              </li>
-              <li className="my-1 text-sm">
-                <a href="" className="hover:text-red-600">
-                  商务合作
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </>
+
+      <Hr />
+    </div>
   );
+}
+
+function Hr() {
+  return <div className="before:content-[''] h-6"></div>;
 }
