@@ -1,3 +1,5 @@
+import Breadcrumb from "@/components/Breadcrumb";
+import Container from "@/components/Container";
 import Header from "@/components/Header";
 import Paginate from "@/components/Paginate";
 import Link from "next/link";
@@ -9,26 +11,9 @@ export default function CategoryDetailPage({
 }) {
   return (
     <>
-      <div className="bg-[#e3e4e5] text-[#999] text-sm">
-        <ul className="flex justify-start items-center py-3 container mx-auto max-w-7xl ">
-          <li className="after:content-['>'] after:mx-2">
-            <Link href="/" className="hover:text-red-600">
-              分类1
-            </Link>
-          </li>
-          <li className="after:content-['>'] after:mx-2">
-            <Link href="/" className="hover:text-red-600">
-              分类1-1
-            </Link>
-          </li>
-          <li className="">
-            <Link href="/" className="hover:text-red-600">
-              分类1-1-1
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="container mx-auto max-w-7xl my-6">
+      <Breadcrumb />
+
+      <Container className="my-6">
         <div className="border">
           <div className="grid grid-cols-12 text-sm border-b last:border-none ">
             <div className="col-span-2 bg-[#f3f3f3] p-3 border-r">品牌：</div>
@@ -211,7 +196,7 @@ export default function CategoryDetailPage({
         </ul>
 
         <Paginate />
-      </div>
+      </Container>
     </>
   );
 }

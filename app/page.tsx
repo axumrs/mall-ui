@@ -1,3 +1,4 @@
+import Container from "@/components/Container";
 import {
   EnvelopeIcon as UserLoginIcon,
   KeyIcon,
@@ -39,7 +40,7 @@ export default function Home() {
         </div>
       </section> */}
       <Hr />
-      <div className="container mx-auto max-w-7xl grid grid-cols-12 gap-x-2">
+      <Container className="grid grid-cols-12 gap-x-2">
         <div className="col-span-2 bg-white">
           <ul className="">
             <li className="relative group hover:bg-gray-200 p-3">
@@ -349,9 +350,9 @@ export default function Home() {
             </div>
           </form>
         </div>
-      </div>
+      </Container>
 
-      <section className="container mx-auto max-w-7xl mt-6">
+      <Container className="mt-6">
         <h2 className="my-6 text-xl font-bold text-center before:content-['/'] after:content-['/'] before:font-mono before:text-xs before:mr-3 before:text-gray-600 after:font-mono after:text-xs after:ml-3 after:text-gray-600">
           推荐商品
         </h2>
@@ -486,7 +487,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
-      </section>
+      </Container>
 
       <Hr />
     </div>

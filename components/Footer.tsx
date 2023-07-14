@@ -1,9 +1,10 @@
 import React from "react";
+import Container from "./Container";
 
 export default function Footer() {
   return (
     <footer className="bg-[#eaeaea]">
-      <div className="container mx-auto max-w-7xl">
+      <Container>
         <div className="grid grid-cols-5 p-6">
           <div>
             <img
@@ -79,7 +80,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

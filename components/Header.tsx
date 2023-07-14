@@ -5,12 +5,13 @@ import {
 } from "@heroicons/react/24/outline";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import Container from "./Container";
 
 export default function Header() {
   return (
     <header className="">
       <div className="bg-[#e3e4e5] text-[#999]">
-        <div className="container max-w-7xl mx-auto flex justify-between items-center text-xs">
+        <Container className="flex justify-between items-center text-xs">
           <ul className="flex justify-start items-center space-x-2">
             <li className="py-1">
               <Link
@@ -360,10 +361,10 @@ export default function Header() {
               </ul>
             </li>
           </ul>
-        </div>
+        </Container>
       </div>
 
-      <div className="container max-w-7xl mx-auto my-6 flex justify-between items-center">
+      <Container className="my-6 flex justify-between items-center">
         <Link href="/" className="flex justify-start items-center space-x-2">
           <img
             src="https://file.axum.rs/asset/logo.png"
@@ -428,7 +429,7 @@ export default function Header() {
             </span>
           </div>
         </Link>
-      </div>
+      </Container>
     </header>
   );
 }
